@@ -1,0 +1,3 @@
+### Write the docker run command you executed for (6) in a file named part-1-cmd.
+
+docker run -d --name csvserver -v "$(pwd)/inputFile:/csvserver/inputdata" -e CSVSERVER_BORDER=Orange -p 9393:9300 infracloudio/csvserver:latest
